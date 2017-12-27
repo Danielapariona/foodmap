@@ -76,9 +76,7 @@ body {
 }
 
 .button {
-  
   padding: 6px;
-  
   border-radius: 5px;
 }
 
@@ -86,11 +84,40 @@ body {
   text-align: center;
 }
 
-.content-text a{
+.content-text a {
   color: #F5A623;
   font-size: 25px;
 }
 
 .show {
   margin-top: 13px;
+}
+
+.card-restaurant {
+  border: 1px solid #bcbcbc;
+  padding: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+  box-shadow: 2px 2px 8px grey;
+}
+
+.data {
+  width: 60%;
+}
+
+.photo-restaurant {
+  width: 39%;
+  background-image: url(../assets/images/rest-charapito.jpg);
+  height: 140px;
+  background-position: bottom;
+}
+
+.photo-restaurant img {
+  width: 80px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
