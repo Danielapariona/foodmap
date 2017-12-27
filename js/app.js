@@ -1,5 +1,5 @@
-$(function(){
-  setTimeout(function() {
-     $('.loader-wrap').fadeOut(500);
-  }, 2000);
+$(function () {
+  setTimeout(function () {
+    $('.loader-wrap').fadeOut(500);
+  }, 1000);
 });

@@ -1,6 +1,96 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+
 /* Mis clases */
+
+.content-search input {
+  border: none;
+  outline: none;
+  margin-left: 5px;
+  width: 90%;
+}
+
+.content-input {
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.header {
+  background-color: #F5A623;
+}
+
+.brand {
+  width: 90%;
+  display: inline-block;
+}
+
+.title {
+  text-align: center;
+  padding: 12px;
+  color: #fff;
+  font-size: 24px;
+}
+
+.map {
+  width: 100%;
+}
+
+.container {
+  padding: 10px;
+}
+
+.container:before,
+.container:after {
+  content: " ";
+  display: table;
+}
+
+.content-title {
+  padding: 12px 0;
+}
+
+.back {
+  color: #fff;
+  font-size: 20px;
+  margin-left: 14px;
+}
+
+.button {
+  
+  padding: 6px;
+  
+  border-radius: 5px;
+}
+
+.content-text {
+  text-align: center;
+}
+
+.content-text a{
+  color: #F5A623;
+  font-size: 25px;
+}
+
+.show {
+  margin-top: 13px;
+}
