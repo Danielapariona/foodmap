@@ -1,5 +1,3 @@
-
-
 $(function(){
   setTimeout(function() {
      $('.loader-wrap').fadeOut(500);
