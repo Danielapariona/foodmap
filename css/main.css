@@ -117,3 +117,17 @@ body {
   align-items: center;
   justify-content: space-around;
 }
+
+#food {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#food img {
+  width: 49%;
+  /* display: inline-block; */
+  padding-top: 10px;
+  height: 180px;
+}

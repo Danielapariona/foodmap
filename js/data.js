@@ -1,29 +1,30 @@
 var data = {
   'CANETE': {
     'Imperial': {
-      'restaurant': [{
+      'restaurant': [
+        {
           'name': 'Restaurant Chicharronería Charapito',
           'address': 'Jirón Ayacucho 198',
           'time':'17:00',
           'photo':'http://dummyimage.com/162x148.png/ff4444/ffffff',
-          'link':'Charapito.html',
+          'link':'charapito.html',
           'type': [
             'Criollo', 'Chicharronería'
           ],
           'foods': {
             'entry': [{
                 'name': 'Papa a la Huacaína',
-                'photo': 'http://dummyimage.com/162x148.png/ff4444/ffffff',
+                'photo': 'https://t2.rg.ltmcdn.com/es/images/5/0/1/img_papas_a_la_huancaina_bolivia_32105_600.jpg',
                 'price': 8
               },
               {
                 'name': 'Ensalada Mixta',
-                'photo': 'http://dummyimage.com/162x148.png/ff4444/ffffff',
+                'photo': 'https://i.ytimg.com/vi/B5ZMtBbaEtc/maxresdefault.jpg',
                 'price': 10
               },
               {
                 'name': 'Ensalada Popeye',
-                'photo': 'http://dummyimage.com/162x148.png/ff4444/ffffff',
+                'photo': 'http://menuperu.pe.s3.amazonaws.com/media/receta/Ensalada%20de%20pollo%20y%20fresas-2780.jpeg',
                 'price': 12
               }
             ],
@@ -55,7 +56,7 @@ var data = {
           'address': 'Jirón Ayacucho 198',
           'time': '23:30',
           'photo':'https://dummyimage.com/162x148.png/frdesw',
-          'link':'../adela.html',
+          'link':'adela.html',
           'type': [
             'Criollo', 'Chicharronería'
           ],
@@ -104,7 +105,7 @@ var data = {
           'address': 'Jirón Ayacucho 198',
           'time': '23:30',
           'photo':'https://dummyimage.com/162x148.png/cdcdsd',
-          'link':'../adela.html',
+          'link':'adela1.html',
           'type': [
             'Criollo', 'Chicharronería'
           ],
