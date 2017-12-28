@@ -118,16 +118,16 @@ body {
   justify-content: space-around;
 }
 
-#food {
+#food, #main-course {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-#food img {
+#food img, #main-course img {
   width: 49%;
-  /* display: inline-block; */
   padding-top: 10px;
   height: 180px;
+  cursor: pointer;
 }

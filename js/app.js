@@ -22,6 +22,7 @@ for (var i = 0; i < $restaurant.length; i++) {
   $contentCard.append($card);
   var $data = $('.data');
   var $link = $('.link');
+  
   // Muestra dinamicamente los datos
   var $keys = ['name', 'address', 'time','photo'];
   for (var j = 0; j < $keys.length; j++) {

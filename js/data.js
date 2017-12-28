@@ -30,22 +30,22 @@ var data = {
             ],
             'main course': [{
                 'name': 'Chicharrones de chancho',
-                'photo': 'http://dummyimage.com/162x148.png/ff4444/ffffff',
+                'photo': 'http://photos-a.netjoven.pe/_files/noticias/1403368019-136.jpg',
                 'price': 15
               },
               {
                 'name': 'Lomo Saltado',
-                'photo': 'http://dummyimage.com/162x148.png/ff4444/ffffff',
+                'photo': 'https://cdne.ojo.pe/thumbs/uploads/articles/images/receta-como-preparar-un-delici-jpg_700x0.jpg',
                 'price': 21
               },
               {
                 'name': 'Seco de pato',
-                'photo': 'http://dummyimage.com/162x148.png/ff4444/ffffff',
+                'photo': 'https://cde.peru.com//ima/0/0/8/1/9/819495/611x458/seco-pato.jpg',
                 'price': 35
               },
               {
                 'name': 'Arroz con pollo',
-                'photo': 'http://dummyimage.com/162x148.png/ff4444/ffffff',
+                'photo': 'https://comidasperuanas.net/wp-content/uploads/2015/07/Arroz-con-Pollo-Peruano-730x430.jpg',
                 'price': 12
               }
             ]
