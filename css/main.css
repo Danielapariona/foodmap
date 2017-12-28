@@ -101,10 +101,6 @@ body {
   box-shadow: 2px 2px 8px grey;
 }
 
-.data {
-  width: 60%;
-}
-
 .photo-restaurant {
   width: 39%;
   background-image: url(../assets/images/rest-charapito.jpg);
@@ -118,6 +114,6 @@ body {
 
 .center {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-around;
 }
