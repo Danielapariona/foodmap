@@ -3,14 +3,12 @@ var data = {
     'Imperial': {
       'restaurant': [
         {
-          'name': 'Restaurant Chicharronería Charapito',
+          'name': 'Restaurant Chicharronería Charapito criollo',
           'address': 'Jirón Ayacucho 198',
           'time':'17:00',
           'photo':'http://dummyimage.com/162x148.png/ff4444/ffffff',
           'link':'charapito.html',
-          'type': [
-            'Criollo', 'Chicharronería'
-          ],
+          'type': 'criollo',
           'foods': {
             'entry': [{
                 'name': 'Papa a la Huacaína',
@@ -52,14 +50,12 @@ var data = {
           }
         },
         {
-          'name': 'Restaurant Chicharronería Charapito II',
+          'name': 'cevicheria I',
           'address': 'Jirón Ayacucho 198',
           'time': '23:30',
           'photo':'https://dummyimage.com/162x148.png/frdesw',
           'link':'adela.html',
-          'type': [
-            'Criollo', 'Chicharronería'
-          ],
+          'type': 'cevicheria',
           'foods': {
             'entry': [{
                 'name': 'Papa a la Huacaína',
@@ -101,14 +97,12 @@ var data = {
           }
         },
         {
-          'name': 'Restaurant Chicharronería Charapito III',
+          'name': 'Chicharronería Charapito III',
           'address': 'Jirón Ayacucho 198',
           'time': '23:30',
           'photo':'https://dummyimage.com/162x148.png/cdcdsd',
           'link':'adela1.html',
-          'type': [
-            'Criollo', 'Chicharronería'
-          ],
+          'type': 'chicharroneria',
           'foods': {
             'entry': [{
                 'name': 'Papa a la Huacaína',

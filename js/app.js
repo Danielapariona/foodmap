@@ -4,17 +4,10 @@ $(function () {
   }, 1000);
 });
 
-/* */
-
 var $contentCard = $('#content-card');
-var $cardRestaurant = $('.card-restaurant');
+var $restaurant = data["CANETE"]["Imperial"]["restaurant"];
 
-/* Data */
-
-/*$restaurant[0]['name'] */
-var $place = data["CANETE"]["Imperial"];
-var $restaurant = $place["restaurant"];
-
+var $options;
 
 for (var i = 0; i < $restaurant.length; i++) {
   // crea los contenedores
@@ -22,7 +15,17 @@ for (var i = 0; i < $restaurant.length; i++) {
   $contentCard.append($card);
   var $data = $('.data');
   var $link = $('.link');
+
+  var $totalCards = $('.card-restaurant'); // 3
+  //Agrega la clase según el tipo que corresponda
+  $totalCards.eq(i).addClass($restaurant[i]['type']); 
   
+  $('select').append("<option class='op'>"+$restaurant[i]['type']+"</option>");
+
+  $options = $('option.op');
+  var $option = $('<option>');
+  $options.eq(i).attr('value',$restaurant[i]['type']);
+
   // Muestra dinamicamente los datos
   var $keys = ['name', 'address', 'time','photo'];
   for (var j = 0; j < $keys.length; j++) {
@@ -38,3 +41,15 @@ for (var i = 0; i < $restaurant.length; i++) {
     }
   }
 }
+
+// Filtrar data
+var $elements = $('.card-restaurant');
+$('select').change(function(e) {
+  var value = $('option:selected').val().toLowerCase();
+  console.log(value);
+  $('.card-restaurant').detach();
+  $elements.appendTo('#content-card');
+  if (value !== 'todos') {
+    $('.card-restaurant').show().filter(':not(.'+value+')').detach();
+  }
+}) 
