@@ -24,7 +24,7 @@ for (var i = 0; i < $restaurant.length; i++) {
   var $totalCards = $('.card-restaurant'); // 3
   $totalCards.eq(i).addClass($restaurant[i]['type']);
 
-  // Llenando los datos de la comida dinamicamente a la vista.  
+  // Llenando los datos del restaurante dinamicamente a la vista.  
   var $keys = ['name', 'address', 'time'];
   for (var j = 0; j < $keys.length; j++) {
     $('.data').eq(i).append('<p>' + $restaurant[i][$keys[j]] + '</p>')

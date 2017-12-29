@@ -95,7 +95,7 @@ body {
 
 .card-restaurant {
   border: 1px solid #bcbcbc;
-  padding: 10px;
+  padding: 15px;
   margin-top: 15px;
   cursor: pointer;
   box-shadow: 2px 2px 8px grey;
@@ -115,23 +115,52 @@ body {
 .center {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
-#food, #main-course {
+#entry, #main-course {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-#food img, #main-course img {
+.image {
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.1);
+  overflow: hidden;
+  position: relative;
   width: 49%;
-  padding-top: 10px;
-  height: 180px;
   cursor: pointer;
+  margin-top: 10px;
 }
 
-.hidden {
-  display: none;
+figure img {
+  border-radius: 5px;
+  height: 100%;
+  transition: all .23s ease;
+  width: 100%;
+}
+
+.image figcaption {
+  color: #fff;
+  height: 100%;
+  left: 0;
+  line-height: 170px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  transition: all .23s ease;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.315);
+}
+
+.image figcaption {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.image:hover > figcaption {
+  opacity: 5;
+  visibility: visible;
+  font-weight: 700;
 }

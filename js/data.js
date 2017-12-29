@@ -26,7 +26,7 @@ var data = {
                 'price': 12
               }
             ],
-            'main course': [{
+            'main-course': [{
                 'name': 'Chicharrones de chancho',
                 'photo': 'http://photos-a.netjoven.pe/_files/noticias/1403368019-136.jpg',
                 'price': 15
@@ -73,7 +73,7 @@ var data = {
                 'price': 12
               }
             ],
-            'main course': [{
+            'main-course': [{
                 'name': 'Chicharrones de chancho',
                 'photo': 'http://dummyimage.com/162x148.png/ff4444/ffffff',
                 'price': 15
@@ -120,7 +120,7 @@ var data = {
                 'price': 12
               }
             ],
-            'main course': [{
+            'main-course': [{
                 'name': 'Chicharrones de chancho',
                 'photo': 'http://dummyimage.com/162x148.png/ff4444/ffffff',
                 'price': 15
