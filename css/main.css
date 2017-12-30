@@ -51,7 +51,7 @@ body {
   background-color: #fff;
 }
 
-.header .container{
+.header .container {
   background-color: #F5A623;
 }
 
@@ -188,7 +188,6 @@ figure img {
 .content-modal {
   border: 1px solid #fff;
   width: 300px;
-  height: 400px;
   margin: auto;
   background-color: #fff;
   border-radius: 5px;
@@ -223,12 +222,12 @@ figure img {
 }
 
 .box-select {
-  margin:20px auto 40px auto;	
-  border:1px solid #d9d9d9;
-  height:30px;
-  overflow: hidden;  
+  margin: 20px auto 40px auto;
+  border: 1px solid #d9d9d9;
+  height: 30px;
+  overflow: hidden;
   width: 270px;
-  position:relative;
+  position: relative;
 }
 
 .select-type {
@@ -239,22 +238,31 @@ figure img {
   padding: 5px;
   width: 270px;
 }
-.select-type:focus{ outline: none;}
 
-.box-select::after{
- content:"\025be";
- display:table-cell;
- padding-top:3px;
- text-align:center;
- width:30px;
- height:30px;
- background-color:#d9d9d9;
- position:absolute;
- top:0;
- right:0px;	
- pointer-events: none;
+.select-type:focus {
+  outline: none;
+}
+
+.box-select::after {
+  content: "\025be";
+  display: table-cell;
+  padding-top: 3px;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  background-color: #d9d9d9;
+  position: absolute;
+  top: 0;
+  right: 0px;
+  pointer-events: none;
 }
 
 .close {
   cursor: pointer;
+}
+
+.subtitle-2 {
+  border-bottom: 2px solid #F5A623;
+  display: inline-block;
+  margin: 15px 0 10px 0;
 }

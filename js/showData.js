@@ -55,7 +55,7 @@ function showDataModal(idContainer, index) {
   $('.content-modal').append('<p class="text-center">' + $element['description'] + '</p><br>');
   $('.content-modal').append('<p><b> Precio:</b> S/' + $element['price'] + '.00' + '</p>');
   $('.content-modal').append('<p>' + $element['service'] + '</p>');
-  $('figure#fig-modal').append($('<img>').attr('src', $element['photo']));
+  $('figure#fig-modal').append($('<img><br>').attr('src', $element['photo']));
 
   //Añade el botón de pedir pedido
   $('.content-modal').append($('<a class="btn text-center">Pedir ahora</a>').attr('href',$foods['link']));
