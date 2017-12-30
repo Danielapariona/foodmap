@@ -37,9 +37,7 @@ function showModal() {
   var $idContainer = $(this).parent().attr('id');
   var $indexFood = $(this).index();
 
-  //Añade la data en el modal
-  var $dataModal = ['name', 'description', 'price', 'service', 'photo'];
-  showDataModal($idContainer, $indexFood, $dataModal)
+  showDataModal($idContainer, $indexFood)
 
   //Cierra el modal
   $modal.on('click', closeModal);
@@ -49,25 +47,14 @@ function showModal() {
   }
 }
 
-function showDataModal(idContainer, index, data) {
+function showDataModal(idContainer, index) {
+  //Mostrando los datos en el modal
   var $element = $foods['foods'][idContainer][index]
-  for (var i = 0; i < data.length; i++) {
-    if (data[i] == 'name') {
-      var $name = $element['name'];
-      $('.content-modal').prepend('<h3 class="text-center subtitle">' + $name + '</h3>');
-    } else if (data[i] == 'price') {
-      var $price = $element['price']
-      $('.content-modal').append('<p><b> Precio:</b> S/' + $price + '.00' + '</p>');
-    } else if (data[i] == 'service') {
-      var $service = $element['service'];
-      $('.content-modal').append('<p>' + $service + '</p>');
-    } else if (data[i] == 'description') {
-      var $description = $element['description'];
-      $('.content-modal').append('<p class="text-center">' + $description + '</p><br>');
-    } else if (data[i] == 'photo') {
-      $('figure#fig-modal').append($('<img>').attr('src', $element['photo']));
-    }
-  }
+  $('.content-modal').prepend('<h3 class="text-center subtitle">' + $element['name'] + '</h3>');
+  $('.content-modal').append('<p class="text-center">' + $element['description'] + '</p><br>');
+  $('.content-modal').append('<p><b> Precio:</b> S/' + $element['price'] + '.00' + '</p>');
+  $('.content-modal').append('<p>' + $element['service'] + '</p>');
+  $('figure#fig-modal').append($('<img>').attr('src', $element['photo']));
 
   //Añade el botón de pedir pedido
   $('.content-modal').append($('<a class="btn text-center">Pedir ahora</a>').attr('href',$foods['link']));
