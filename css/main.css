@@ -8,6 +8,10 @@ a {
   text-decoration: none;
 }
 
+body {
+  background: #eee;
+}
+
 .link {
   color: #000;
 }
@@ -19,8 +23,6 @@ a {
 .link:hover {
   color: #53524f;
 }
-
-
 
 *:before,
 *:after {
@@ -49,7 +51,7 @@ body {
   background-color: #fff;
 }
 
-.header {
+.header .container{
   background-color: #F5A623;
 }
 
@@ -70,17 +72,22 @@ body {
 }
 
 .container {
-  padding: 10px;
+  height: 100%;
+  max-width: 600px;
+  min-width: 450px;
+  margin: auto;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.loader-brand {
+  background-color: #2f2f2f;
 }
 
 .container:before,
 .container:after {
   content: " ";
   display: table;
-}
-
-.content-title {
-  padding: 12px 0;
 }
 
 .back {
@@ -92,19 +99,6 @@ body {
 .button {
   padding: 6px;
   border-radius: 5px;
-}
-
-.content-text {
-  text-align: center;
-}
-
-.content-text a {
-  color: #F5A623;
-  font-size: 25px;
-}
-
-.show {
-  margin-top: 13px;
 }
 
 .card-restaurant {
@@ -132,7 +126,8 @@ body {
   justify-content: space-between;
 }
 
-#entry, #main-course {
+#entry,
+#main-course {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -140,7 +135,7 @@ body {
 }
 
 .image {
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,.1);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .1);
   overflow: hidden;
   position: relative;
   width: 49%;
@@ -173,7 +168,7 @@ figure img {
   visibility: hidden;
 }
 
-.image:hover > figcaption {
+.image:hover>figcaption {
   opacity: 5;
   visibility: visible;
   font-weight: 700;
@@ -193,10 +188,6 @@ figure img {
   width: 90%;
   display: block;
   margin: auto;
-}
-
-.pos-absolute {
-  position: absolute;
 }
 
 .content-modal {
@@ -219,6 +210,7 @@ figure img {
 
 .subtitle {
   margin: 15px;
+  color: #F5A623;
 }
 
 .btn {
