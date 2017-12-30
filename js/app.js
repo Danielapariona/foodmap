@@ -5,6 +5,7 @@ $(function () {
   }, 1000);
 });
 
+
 // Accediendo a la data.
 var $restaurant = data["CANETE"]["Imperial"]["restaurant"];
 // Selectores
@@ -41,7 +42,6 @@ for (var i = 0; i < $restaurant.length; i++) {
 var $elements = $('.card-restaurant');
 $('select').change(function (e) {
   var value = $('option:selected').val().toLowerCase();
-  console.log(value);
   $('.card-restaurant').detach();
   $elements.appendTo('#content-card');
   if (value !== 'todos') {
