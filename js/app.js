@@ -16,7 +16,6 @@ function showRestaurant(restaurant) {
     var $card = $("<div class='card-restaurant'><a href='#' class='link center'><div class='data'></div></a></div>");
     $('#content-card').append($card);
     $('.card-restaurant').eq(index).addClass($restaurant[index]['type']);
-
     showDataRestauran(index);
   }
 }

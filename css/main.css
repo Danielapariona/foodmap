@@ -8,6 +8,20 @@ a {
   text-decoration: none;
 }
 
+.link {
+  color: #000;
+}
+
+.link:visited {
+  color: #64410e;
+}
+
+.link:hover {
+  color: #53524f;
+}
+
+
+
 *:before,
 *:after {
   -webkit-box-sizing: border-box;
