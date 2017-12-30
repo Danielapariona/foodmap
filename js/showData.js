@@ -2,15 +2,15 @@ var $nroRest = 0;
 var $foods = data["CANETE"]["Imperial"]["restaurant"][$nroRest]; // Todos los platos entrada, plato principal
 
 // Muestra todos los platos en la página, depediendo si es entrada o plato principal;
-showFood('entry') //Entradas
-showFood('main-course') //plato principal
+showFood('.charapito', 'entry') //Entradas
+showFood('.charapito', 'main-course') //plato principal
 
-function showFood(typeFood) {
+function showFood(nameClass, typeFood) {
   var $allFood = $foods['foods'][typeFood]
   for (var i = 0; i < $allFood.length; i++) {
     // Añade la imagen que corresponde, según la entrada o plato principal
     var idContent = '#' + typeFood;
-    $(idContent).append("<figure class='image'><img class='food'>")
+    $(nameClass + idContent).append("<figure class='image'><img class='food'>")
     var $images = $(idContent + ' ' + 'img.food')
     $images.eq(i).attr('src', $allFood[i]['photo']);
 

@@ -43,7 +43,7 @@ function showDataRestauran(index) {
 // Filtrando data
 var $elements = $('.card-restaurant');
 $('select').change(function (e) {
-  var value = $('option:selected').val().toLowerCase();
+  var value = $('option:selected').val();
   $('.card-restaurant').detach();
   $elements.appendTo('#content-card');
   if (value !== 'todos') {
