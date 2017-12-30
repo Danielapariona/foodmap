@@ -226,3 +226,36 @@ figure img {
 .y-center {
   justify-content: center
 }
+
+.box-select {
+  margin:20px auto 40px auto;	
+  border:1px solid #d9d9d9;
+  height:30px;
+  overflow: hidden;  
+  width: 270px;
+  position:relative;
+}
+
+.select-type {
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  height: 30px;
+  padding: 5px;
+  width: 270px;
+}
+.select-type:focus{ outline: none;}
+
+.box-select::after{
+ content:"\025be";
+ display:table-cell;
+ padding-top:3px;
+ text-align:center;
+ width:30px;
+ height:30px;
+ background-color:#d9d9d9;
+ position:absolute;
+ top:0;
+ right:0px;	
+ pointer-events: none;
+}
