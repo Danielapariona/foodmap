@@ -2,7 +2,7 @@
 $(function () {
   setTimeout(function () {
     $('.loader-wrap').fadeOut(500);
-  }, 1000);
+  }, 5000);
 });
 
 // Accediendo a la data.
