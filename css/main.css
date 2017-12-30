@@ -96,11 +96,6 @@ body {
   margin-left: 14px;
 }
 
-.button {
-  padding: 6px;
-  border-radius: 5px;
-}
-
 .card-restaurant {
   border: 1px solid #bcbcbc;
   padding: 15px;
@@ -258,4 +253,8 @@ figure img {
  top:0;
  right:0px;	
  pointer-events: none;
+}
+
+.close {
+  cursor: pointer;
 }

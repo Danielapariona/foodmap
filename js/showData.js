@@ -41,7 +41,7 @@ function showModal() {
 
   //Cierra el modal
   $modal.on('click', closeModal);
-
+  
   function closeModal(e) {
     $(this).remove();
   }
@@ -49,8 +49,9 @@ function showModal() {
 
 function showDataModal(idContainer, index) {
   //Mostrando los datos en el modal
-  var $element = $foods['foods'][idContainer][index]
-  $('.content-modal').prepend('<h3 class="text-center subtitle">' + $element['name'] + '</h3>');
+  var $element = $foods['foods'][idContainer][index];
+
+  $('.content-modal').prepend('<div class="center"><h3 class="text-center subtitle">' + $element['name'] + '</h3><i class="fa fa-times close" aria-hidden="true"></i></div>');
   $('.content-modal').append('<p class="text-center">' + $element['description'] + '</p><br>');
   $('.content-modal').append('<p><b> Precio:</b> S/' + $element['price'] + '.00' + '</p>');
   $('.content-modal').append('<p>' + $element['service'] + '</p>');
