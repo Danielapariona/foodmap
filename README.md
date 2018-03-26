@@ -1,7 +1,7 @@
 # foodmap
 Foodmap es una aplicación web que muestra los restaurante 'cerca de ti', donde puedes seleccionar un plato del restaurante y hacer tu pedido.
 
-![foodmap-preview](https://user-images.githubusercontent.com/4741745/37867537-0685f430-2f68-11e8-938a-fe9f5e3725ea.png)
+![foodmap-preview](https://user-images.githubusercontent.com/4741745/37883774-032f7828-3072-11e8-9f75-71fff1b22bdf.png)
 
 ## Desarrollado para 
 [Laboratoria](http://laboratoria.la)
